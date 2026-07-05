@@ -13,59 +13,14 @@ in
   imports =
     [ # Include the results of the hardware scan.
       /etc/nixos/hardware-configuration.nix
+      ./modules/programs.nix
+      ./modules/base.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
-boot.loader = {
-  systemd-boot.enable = false;
-  grub = {
-    enable = true;
-    device = "nodev";
-    efiSupport = true;
-    useOSProber = false;
-  };
-  efi.canTouchEfiVariables = true;
-};
-
-  # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-
-  networking.hostName = "nix-server"; # Define your hostname.
-
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-  # Configure network connections interactively with nmcli or nmtui.
-  networking.networkmanager.enable = true;
-
-  # Set your time zone.
-  time.timeZone = "Europe/Berlin";
-
-  nixpkgs.config.allowUnfree = true;
-
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-  # Select internationalisation properties.
-  # i18n.defaultLocale = "en_US.UTF-8";
-  console = {
-    font = "Lat2-Terminus16";
-    keyMap = "de";
-  };
-
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-  
-  nix = {
-    optimise.automatic = true;
-    gc = {
-      automatic = true;
-      dates = "weekly";
-      options = "--delete-older-than 30d";
-    };
-  };
   # Configure keymap in X11
   services.xserver.xkb.layout = "de";
+  services.xserver.enable = true;
   # services.xserver.xkb.options = "eurosign:e,caps:escape";
 
   # Enable CUPS to print documents.
@@ -113,34 +68,7 @@ boot.loader = {
 
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
-  environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    prismlauncher
-    wget
-    fastfetch
-    kitty
-    hyprpaper
-    waybar
-    git
-    rofi
-    thunar
-    xdg-user-dirs
-    pinta
-    nwg-look
-    zip
-    pcmanfm
-    unzip
-    sddm-astronaut
-    sassc
-    blueman
-    pavucontrol
-    seahorse
-    protonup-qt
-  ];
-  fonts.packages = with pkgs; [
-    nerd-fonts.jetbrains-mono
-    jetbrains-mono
-  ];
+  
   services.displayManager.sddm = {
     enable = true;
     extraPackages = [ pkgs.sddm-astronaut ];
@@ -162,11 +90,6 @@ boot.loader = {
 
 
   # Open ports in the firewall.
-  networking.firewall = {
-    enable = true;
-    allowedTCPPorts = [ 53317 ];
-    allowedUDPPorts = [ 53317 ];
-  };
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
