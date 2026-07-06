@@ -33,4 +33,8 @@ in
     extraPackages = [ pkgs.sddm-astronaut ];
     theme = "sddm-astronaut-theme";
   };
+  networking.firewall = {
+    allowedTCPPorts = [ 53317 ];
+    allowedUDPPorts = [ 53317 ];
+  };
 }
