@@ -17,6 +17,8 @@
     nwg-look
     zip
     pcmanfm
+    spotify
+    discord
     unzip
     sassc
     pavucontrol
