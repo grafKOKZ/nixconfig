@@ -2,8 +2,9 @@
 
 {
   environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    vim
     prismlauncher
+    tree
     wget
     fastfetch
     kitty
@@ -11,16 +12,13 @@
     waybar
     git
     rofi
-    thunar
     xdg-user-dirs
     pinta
     nwg-look
     zip
     pcmanfm
     unzip
-    sddm-astronaut
     sassc
-    blueman
     pavucontrol
     seahorse
     protonup-qt
@@ -29,4 +27,7 @@
     nerd-fonts.jetbrains-mono
     jetbrains-mono
   ];
+  programs.firefox.enable = true;
+  programs.localsend.enable = true;
+  programs.steam.enable = true;
 }
