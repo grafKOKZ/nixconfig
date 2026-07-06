@@ -7,14 +7,6 @@ in
 {
   services.xserver.xkb.layout = "de";
   services.xserver.enable = true;
-  # services.xserver.xkb.options = "eurosign:e,caps:escape";
-
-  # Enable CUPS to print documents.
-  # services.printing.enable = true;
-
-  # Enable sound.
-  # services.pulseaudio.enable = true;
-  # OR
   security.rtkit.enable = true;
 
   services.pipewire = {
@@ -24,6 +16,13 @@ in
     alsa.support32Bit = true;
   };
   hardware.bluetooth.enable = true;
+  
+  services.xserver.videoDrivers = [ "amdgpu" ];
+
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+  };
 
   environment.systemPackages = with pkgs; [
     sddm-astronaut
