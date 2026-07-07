@@ -1,0 +1,18 @@
+*{
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: JetBrainsMono Nerd Font Propo;
+    font-size: 16px;
+}
+
+window#waybar {
+    background-color: transparent; 
+    color: #ffffff;
+}
+#basic { 
+    background: rgb(17,17,27);
+    padding : 0px;
+}
+#workspaces {
+    background: rgb(17,17,27);
+    padding :0px;
+}
