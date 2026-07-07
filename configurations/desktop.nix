@@ -8,6 +8,7 @@
     ../modules/hyprland.nix
     ../modules/deUtils.nix
     ../modules/users.nix
+    #../modules/drivers.nix
   ];
   system.stateVersion = "26.05";
 }

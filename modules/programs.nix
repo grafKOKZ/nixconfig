@@ -28,6 +28,7 @@
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
     jetbrains-mono
+    nerd-fonts.iosevka
   ];
   programs.firefox.enable = true;
   programs.localsend.enable = true;
