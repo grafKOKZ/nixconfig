@@ -7,6 +7,8 @@
     tree
     wget
     fastfetch
+    swaynotificationcenter
+    libnotify
     kitty
     hyprpaper
     waybar

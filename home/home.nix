@@ -13,6 +13,8 @@
     file.".config/waybar/style.css".source = ./dotfiles/waybar/style.css;
     file.".config/fastfetch/config.jsonc".source = ./dotfiles/fastfetch/config.jsonc;
     file.".config/rofi/config.rasi".source = ./dotfiles/rofi/config.rasi;
+    file.".config/swaync/config.json".source = ./dotfiles/swaync/config.json;
+    file.".config/swaync/style.css".source = ./dotfiles/swaync/style.css;
     file.".vimrc".source = ./dotfiles/.vimrc;
     file.".bashrc".source = ./dotfiles/.bashrc;
   };
