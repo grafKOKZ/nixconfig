@@ -12,6 +12,7 @@
     file.".config/waybar/config.jsonc".source = ./dotfiles/waybar/config.jsonc;
     file.".config/waybar/style.css".source = ./dotfiles/waybar/style.css;
     file.".config/fastfetch/config.jsonc".source = ./dotfiles/fastfetch/config.jsonc;
+    file.".config/rofi/config.rasi".source = ./dotfiles/rofi/config.rasi;
     file.".vimrc".source = ./dotfiles/.vimrc;
     file.".bashrc".source = ./dotfiles/.bashrc;
   };
