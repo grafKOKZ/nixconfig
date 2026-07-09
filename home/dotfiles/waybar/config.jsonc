@@ -50,7 +50,7 @@
         "on-click": "exec blueman-manager"
     },
     "pulseaudio": {
-        "format": "{icon} Audio: {volume}%",
+        "format": "{icon} audio: {volume}%",
         "format-muted": "",
         "format-icons": {
             "default": [""," "]

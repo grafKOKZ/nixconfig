@@ -3,31 +3,26 @@
 @define-color sel #ca9ee6;
 @define-color bg-alt #1e1e2e;
 
-* {
-  font-family: "JetBrainsMono Nerd Font Propo";
-}
-
 .notification {
   background: @bg-alt;
   color: @txt;
   border-radius: 0px;
   opacity: 1;
   padding: 16px;
-  border: 2px solid @sel;
+  border: none;
   margin-top: 20px;
   margin-right: 20px;
-  box-shadow: none;
 }
 
 .summary {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   margin-bottom: 8px;
 }
 
 .body {
-  color: @txt;
-  font-size: 18px;
+  color: @sel;
+  font-size: 14px;
 }
 
 .notification-default-action:hover {
@@ -51,6 +46,7 @@
   background: @bg;
   border-radius: 0px;
   max-height: 900px;
+  min-height: 700px;
   margin-top: 20px;
   margin-right: 20px;
   max-width: 650px;
