@@ -49,6 +49,12 @@ window#waybar {
     margin: 0px 5px;
     text-decoration: underline;
 }
+#custom-notifications {
+    padding: 1px 5px;
+    margin: 0px 5px;
+    text-decoration: underline;
+    color: #f4b8e4;
+}
 #memory { 
     color:#a6d189;
     padding: 1px 5px;

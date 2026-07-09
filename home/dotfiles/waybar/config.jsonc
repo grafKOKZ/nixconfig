@@ -8,7 +8,7 @@
     ],
     "group/basic":{
         "orientation": "horizontal",
-        "modules":["bluetooth","pulseaudio"]
+        "modules":["bluetooth","pulseaudio","custom/notifications"]
     },
     "group/system":{
         "orientation": "horizontal",
@@ -23,7 +23,8 @@
     },
     "clock": {
         "format": "{:%d %b %H:%M}",
-        "tooltip-format": "<tt><small>{calendar}</small></tt>"
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "on-click": "exec swaync-client -t"
     },
     "hyprland/workspaces": {
         "format": "{name}",
@@ -58,6 +59,10 @@
         "scroll-step": 1,
         "ignored-sinks": ["Easy Effects Sink"],
         "on-click": "pavucontrol"
+    },
+    "custom/notifications": {
+        "format": " notifications",
+        "on-click": "exec swaync-client -t"
     },
     "cpu": {
         "interval": 10,

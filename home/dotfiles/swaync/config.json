@@ -1,4 +1,5 @@
 {
-  "positionX": "right",
-  "positionY": "bottom"
+  "positionX": "right", 
+  "positionY": "top",
+  "fit-to-screen": false
 }
