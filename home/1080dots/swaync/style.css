@@ -18,10 +18,11 @@
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 8px;
+  color: @sel;
 }
 
 .body {
-  color: @sel;
+  color: @txt;
   font-size: 14px;
 }
 
