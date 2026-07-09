@@ -37,10 +37,28 @@
     gc = {
       automatic = true;
       dates = "weekly";
-      options = "--delete-older-than 30d";
+      options = "--delete-older-than 15d";
     };
   };
+
   networking.firewall = {
     enable = true;
+  };
+
+  environment.systemPackages = with pkgs; [
+    vim
+    tree
+    wget
+    git
+    zip
+    unzip
+    xdg-user-dirs
+  ];
+
+  users.users.klaas = {
+    isNormalUser = true;
+    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+    packages = with pkgs;[
+    ];
   };
 }

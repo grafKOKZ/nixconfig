@@ -2,30 +2,21 @@
 
 {
   environment.systemPackages = with pkgs; [
-    vim
-    prismlauncher
-    tree
-    wget
     fastfetch
     swaynotificationcenter
     libnotify
     kitty
     hyprpaper
     waybar
-    git
     rofi
-    xdg-user-dirs
     pinta
     nwg-look
-    zip
     pcmanfm
     spotify
     discord
-    unzip
     sassc
     pavucontrol
     seahorse
-    protonup-qt
   ];
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
@@ -34,5 +25,4 @@
   ];
   programs.firefox.enable = true;
   programs.localsend.enable = true;
-  programs.steam.enable = true;
 }

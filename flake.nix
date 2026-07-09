@@ -20,7 +20,37 @@
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true; 
-            users.klaas = import ./home/home.nix;
+            users.klaas = import ./home/1080p.nix;
+            backupFileExtension = "backup";
+          };
+        }
+      ];
+    };
+    nixosConfigurations.server = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [ 
+        ./server.nix 
+        home-manager.nixosModules.home-manager
+        {
+          home-manager = {
+            useGlobalPkgs = true;
+            useUserPackages = true; 
+            users.klaas = import ./home/1440p.nix;
+            backupFileExtension = "backup";
+          };
+        }
+      ];
+    };
+    nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [ 
+        ./laptop.nix 
+        home-manager.nixosModules.home-manager
+        {
+          home-manager = {
+            useGlobalPkgs = true;
+            useUserPackages = true; 
+            users.klaas = import ./home/1080p_laptop.nix;
             backupFileExtension = "backup";
           };
         }
