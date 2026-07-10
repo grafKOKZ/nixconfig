@@ -9,6 +9,7 @@
     ./modules/hyprDE.nix
     ./modules/deUtils.nix
     ./modules/gaming.nix
+    ./modules/hostnameS.nix
   ];
   system.stateVersion = "26.05";
 }

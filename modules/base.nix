@@ -15,8 +15,6 @@
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  networking.hostName = "nix-server"; # Define your hostname.
-
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Configure network connections interactively with nmcli or nmtui.

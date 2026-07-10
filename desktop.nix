@@ -9,6 +9,7 @@
     ./modules/hyprDE.nix
     ./modules/deUtils.nix
     ./modules/driversAMD.nix
+    ./modules/hostnameD.nix
   ];
   system.stateVersion = "26.05";
 }

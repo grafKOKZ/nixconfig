@@ -5,6 +5,7 @@
     fastfetch
     swaynotificationcenter
     libnotify
+    file-roller
     kitty
     hyprpaper
     waybar
