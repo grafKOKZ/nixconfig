@@ -1,7 +1,7 @@
 *{
     /* `otf-font-awesome` is required to be installed for icons */
     font-family:"JetBrainsMono Nerd Font Propo";
-    font-size: 16px;
+    font-size: 14px;
     font-weight:bold;
     min-height : 0;
     margin:0px;
@@ -15,11 +15,11 @@ window#waybar {
 #system,
 #worksp {
     background : transparent;
-    margin: 5px 0px;
+    margin: 1px 3px;
  }
 #workspaces button {
     color: #eff1f5;
-    margin: 0px 5px;
+    margin: 1px 3px;
 }
 #workspaces button.active {
     font-weight: 900;
@@ -30,34 +30,34 @@ window#waybar {
 #pulseaudio {
     color: #8caaee;
     text-decoration: underline;
-    padding: 1px 5px;
-    margin: 0px 5px;
+    padding: 1px 3px;
+    margin: 1px 3px;
 }
 #bluetooth {
     color: #ea999c;
-    margin: 0px 5px;
+    margin: 1px 3px;
     text-decoration: underline;
-    padding: 1px 5px;
+    padding: 1px 3px;
 }
 #clock { 
     color: #eff1f5;
-    padding: 1px 5px;
+    padding: 1px 3px;
 }
 #cpu { 
     color: #f4b8e4;
-    padding: 1px 5px;
-    margin: 0px 5px;
+    padding: 1px 3px;
+    margin: 1px 3px;
     text-decoration: underline;
 }
 #custom-notifications {
-    padding: 1px 5px;
-    margin: 0px 5px;
+    padding: 1px 3px;
+    margin: 1px 3px;
     text-decoration: underline;
     color: #ca9ee6;
 }
 #memory { 
     color:#a6d189;
-    padding: 1px 5px;
-    margin: 0px 5px;
+    padding: 1px 3px;
+    margin: 1px 3px;
     text-decoration: underline;
 }

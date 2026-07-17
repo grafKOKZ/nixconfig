@@ -16,8 +16,8 @@
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 hl.monitor({
-    output   = "DP-2",
-    mode     = "preferred",
+    output   = "DP-1",
+    mode     = "1920x1080@240Hz",
     position = "auto",
     scale    = "1",
 })
@@ -75,8 +75,8 @@ hl.env("XDG_SESSION_DESKTOP", "Hyprland")
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
     general = {
-        gaps_in  = 3,
-        gaps_out = 6,
+        gaps_in  = 2,
+        gaps_out = 4,
 
         border_size = 2,
 
@@ -200,7 +200,7 @@ misc = {
 hl.config({
     input = {
         kb_layout  = "de",
-        sensitivity = -0.35, 
+        sensitivity = 0, 
         accel_profile= "flat",
         repeat_rate = 35,
         repeat_delay = 200,
