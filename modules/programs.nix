@@ -15,7 +15,6 @@
     pcmanfm
     spotify
     discord
-    sassc
     pavucontrol
     seahorse
   ];
