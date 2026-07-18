@@ -15,7 +15,7 @@
 }
 
 .summary {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: bold;
   margin-bottom: 8px;
   color: @sel;
@@ -23,7 +23,7 @@
 
 .body {
   color: @txt;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 .notification-default-action:hover {

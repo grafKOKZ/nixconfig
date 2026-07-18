@@ -53,7 +53,7 @@
         "format": "{icon} audio: {volume}%",
         "format-muted": "",
         "format-icons": {
-            "default": [""," "]
+            "default": ["",""]
         },
         "scroll-step": 1,
         "ignored-sinks": ["Easy Effects Sink"],
