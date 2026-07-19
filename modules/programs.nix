@@ -7,6 +7,7 @@
     libnotify
     file-roller
     kitty
+    vlc
     hyprpaper
     waybar
     rofi

@@ -15,11 +15,11 @@ window#waybar {
 #system,
 #worksp {
     background : transparent;
-    margin: 1px 3px;
+    margin: 2px 3px;
  }
 #workspaces button {
     color: #eff1f5;
-    margin: 1px 3px;
+    margin: 2px 3px;
 }
 #workspaces button.active {
     font-weight: 900;
@@ -31,11 +31,11 @@ window#waybar {
     color: #8caaee;
     text-decoration: underline;
     padding: 1px 3px;
-    margin: 1px 3px;
+    margin: 2px 3px;
 }
 #bluetooth {
     color: #ea999c;
-    margin: 1px 3px;
+    margin: 2px 3px;
     text-decoration: underline;
     padding: 1px 3px;
 }
@@ -46,18 +46,18 @@ window#waybar {
 #cpu { 
     color: #f4b8e4;
     padding: 1px 3px;
-    margin: 1px 3px;
+    margin: 2px 3px;
     text-decoration: underline;
 }
 #custom-notifications {
     padding: 1px 3px;
-    margin: 1px 3px;
+    margin: 2px 3px;
     text-decoration: underline;
     color: #ca9ee6;
 }
 #memory { 
     color:#a6d189;
     padding: 1px 3px;
-    margin: 1px 3px;
+    margin: 2px 3px;
     text-decoration: underline;
 }
