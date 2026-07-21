@@ -224,6 +224,8 @@ hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("firefox"))  
+hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("spotify"))  
+hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("discord"))  
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
 hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("pkill waybar; sleep; waybar"))  
 
