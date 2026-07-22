@@ -10,6 +10,7 @@
     vlc
     hyprpaper
     waybar
+    gcc
     rofi
     pinta
     nwg-look
