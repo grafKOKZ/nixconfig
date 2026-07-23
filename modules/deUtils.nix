@@ -12,6 +12,7 @@ in
   services.pipewire = {
     enable = true;
     pulse.enable = true;
+    audio.enable = true;
     alsa.enable = true;
     alsa.support32Bit = true;
   };
@@ -19,6 +20,7 @@ in
   
   environment.systemPackages = with pkgs; [
     sddm-astronaut
+    easyeffects
   ];
   services.displayManager.sddm = {
     enable = true;
