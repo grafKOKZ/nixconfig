@@ -76,8 +76,8 @@ hl.env("XDG_SESSION_DESKTOP", "Hyprland")
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
     general = {
-        gaps_in  = 2,
-        gaps_out = 4,
+        gaps_in  = 6,
+        gaps_out = 12,
 
         border_size = 2,
 
