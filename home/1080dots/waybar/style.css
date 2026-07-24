@@ -28,15 +28,13 @@ window#waybar {
     border-radius : 0px;
 }
 #pulseaudio {
-    color: #8caaee;
-    text-decoration: underline;
+    color: #eff1f5;
     padding: 1px 3px;
     margin: 2px 3px;
 }
 #bluetooth {
-    color: #ea999c;
+    color:#eff1f5;
     margin: 2px 3px;
-    text-decoration: underline;
     padding: 1px 3px;
 }
 #clock { 
@@ -52,11 +50,19 @@ window#waybar {
 #custom-notifications {
     padding: 1px 3px;
     margin: 2px 3px;
-    text-decoration: underline;
-    color: #ca9ee6;
+    color: #eff1f5;
+}
+#custom-seperator {
+    color:#eff1f5;
 }
 #memory { 
     color:#a6d189;
+    padding: 1px 3px;
+    margin: 2px 3px;
+    text-decoration: underline;
+}
+#disk {
+    color : #8caaee;
     padding: 1px 3px;
     margin: 2px 3px;
     text-decoration: underline;
