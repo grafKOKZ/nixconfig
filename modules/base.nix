@@ -5,13 +5,13 @@
     systemd-boot.enable = false;
     grub = {
       enable = true;
-      timeout = 3; 
       device = "nodev";
       efiSupport = true;
       useOSProber = false;
       extraConfig = '' set timeout_style=hidden '';
     };
     efi.canTouchEfiVariables = true;
+    timeout = 3; 
   };
 
   # Use latest kernel.
