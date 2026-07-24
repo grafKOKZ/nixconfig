@@ -45,6 +45,7 @@ local menu        = "rofi -show drun"
  hl.on("hyprland.start", function () 
    hl.exec_cmd("hyprpaper")
    hl.exec_cmd("waybar")
+   hl.exec_cmd("easyeffects --gapplication-service")
    --hl.exec_cmd("swaync")
  end)
 

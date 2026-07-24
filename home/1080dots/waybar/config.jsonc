@@ -1,5 +1,6 @@
 {
     "layer": "top",
+    "position": "bottom",
     "modules-center": ["clock"],
     "modules-left": ["group/worksp"],
     "modules-right": [
