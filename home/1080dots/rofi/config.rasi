@@ -31,11 +31,11 @@ window {
 
 element {
   padding: 12;
-  text-color: @fg;
+  text-color: @fg-alt;
 }
 
 element selected {
-  text-color: @bg-alt;
+  text-color: @fg;
 }
 
 element-text {
@@ -61,7 +61,7 @@ inputbar {
 listview {
   background-color: @bg;
   columns: 1;
-  lines: 4;
+  lines: 6;
 }
 
 mainbox {
