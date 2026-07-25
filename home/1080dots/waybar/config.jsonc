@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "position": "bottom",
+    "position": "top",
     "modules-right": [ 
         "custom/kernel",
         "custom/seperator",
@@ -8,19 +8,18 @@
         "custom/seperator",
         "memory",
         "custom/seperator",
-        "disk",
-        "custom/seperator",
         "clock"
 
     ],
     "modules-center": [ ],
     "modules-left": [
         "group/worksp",
-        "custom/seperator",
+        "custom/b-left",
         "custom/shutdown",
         "custom/notifications",
         "pulseaudio",
-        "bluetooth"
+        "bluetooth",
+        "custom/b-right"
     ],
     "group/worksp":{
         "orientation": "horizontal",
@@ -69,15 +68,22 @@
     },
     "custom/notifications": {
         "format": "",
-        "on-click": "exec swaync-client -t"
+        "on-click": "swaync-client -t"
     },  
     "custom/shutdown": {
         "format": "",
-        "on-click": "~/nixconfig/home/1080dots/rofi/shutdown.sh"
+        "on-double-click": "shutdown now",
+        "on-double-click-right": "reboot"
     }, 
 
     "custom/seperator": {
         "format": "|"
+    },
+    "custom/b-right": {
+        "format": "]"
+    },
+    "custom/b-left": {
+        "format": "["
     },
     "cpu": {
         "interval": 10,
@@ -86,9 +92,6 @@
     "memory": {
         "interval": 30,
         "format": " {used:0.1f}G / {total:0.1f}G"
-    },
-    "disk": {
-        "format": "󰗮 {percentage_used}% used"
     },
     "custom/kernel": {
         "exec": "~/nixconfig/home/1080dots/waybar/kernel.sh",

@@ -21,71 +21,75 @@
 }
 
 window#waybar {
-    background-color: transparent; 
+    background-color: #11111b;
 }
 #workspaces button {
     color: @txt;
-    margin: 3px 3px;
+    margin: 5px 3px;
 }
 #workspaces button.active {
     font-weight: 900;
     color:black;
     background : @l-purple;
     border-radius : 0px;
-    margin: 3px 3px;
+    margin: 5px 3px;
 }
 #pulseaudio {
     color: @txt;
-    padding: 1px 3px;
+    padding: 0px 3px;
     margin: 2px 5px;
 }
 #bluetooth {
     color: @txt;
-    padding: 1px 3px;
+    padding: 0px 3px;
     margin: 2px 5px;
 }
 #clock { 
     color: @l-red;
-    text-decoration: underline;
-    padding: 1px 3px;
-    margin: 2px 3px;
+    border-bottom: 2px solid @l-red ;
+    padding: 0px 3px;
+    margin: 5px 3px;
 }
 #cpu { 
     color: @l-green;
-    text-decoration: underline;
-    padding: 1px 3px;
-    margin: 2px 3px;
+    border-bottom: 2px solid @l-green ;
+    padding: 0px 3px;
+    margin: 5px 3px;
 }
 #custom-shutdown {
     color: @txt;
-    padding: 1px 3px;
+    padding: 0px 3px;
     margin: 2px 5px;
 }
 #custom-notifications {
     color: @txt;
-    padding: 1px 3px;
+    padding: 0px 3px;
     margin: 2px 5px;
 }
 #custom-kernel {
     color: @l-pink;
-    text-decoration: underline;
-    padding: 1px 3px;
-    margin: 2px 3px;
+    border-bottom: 2px solid @l-pink ;
+    padding: 0px 3px;
+    margin: 5px 3px;
 }
 #custom-seperator {
     color: @txt;
-    padding: 1px 3px;
-    margin: 2px 3px;
+    padding: 0px 3px;
+    margin: 5px 3px;
 }
 #memory { 
     color: @l-yellow;
-    text-decoration: underline;
-    padding: 1px 3px;
-    margin: 2px 3px;
+    border-bottom: 2px solid @l-yellow ;
+    padding: 0px 3px;
+    margin: 5px 3px;
 }
-#disk {
-    color : @l-teal;
-    text-decoration: underline;
-    padding: 1px 3px;
-    margin: 2px 3px;
+#custom-b-left {
+    color: @txt;
+    padding: 0px 3px ;
+    margin: 5px 0px 5px 3px;
+}
+#custom-b-right {
+    color: @txt;
+    margin: 5px 0px;
+    padding: 0px 3px;
 }
