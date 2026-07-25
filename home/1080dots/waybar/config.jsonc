@@ -1,19 +1,25 @@
 {
     "layer": "top",
     "position": "bottom",
-    "modules-center": [ ],
+    "modules-center": [ 
+        "custom/kernel",
+        "custom/seperator",
+        "cpu",
+        "custom/seperator",
+        "memory",
+        "custom/seperator",
+        "disk",
+        "custom/seperator",
+        "clock"
+
+    ],
     "modules-left": ["group/worksp"],
     "modules-right": [
-        "group/system","custom/seperator","group/basic"
+        "bluetooth",
+        "pulseaudio",
+        "custom/notifications",
+        "custom/shutdown"
     ],
-    "group/basic":{
-        "orientation": "horizontal",
-        "modules":["bluetooth","pulseaudio","clock","custom/notifications"]
-    },
-    "group/system":{
-        "orientation": "horizontal",
-        "modules":["cpu","memory","disk"]
-    },
     "group/worksp":{
         "orientation": "horizontal",
         "modules":["hyprland/workspaces"]
@@ -22,7 +28,7 @@
         "max-length": 50
     },
     "clock": {
-        "format": "{:%d %b %H:%M}",
+        "format": " {:%d %b %H:%M}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>"
     },
     "hyprland/workspaces": {
@@ -41,9 +47,9 @@
         }
     },
     "bluetooth": {
-        "format": "",
+        "format": " on",
         "format-disabled": " off",
-        "format-connected": " con.",
+        "format-connected": " con",
         "tooltip-format": "{controller_alias}\t{controller_address}",
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
@@ -62,11 +68,15 @@
     "custom/notifications": {
         "format": "",
         "on-click": "exec swaync-client -t"
+    },  
+    "custom/shutdown": {
+        "format": "",
+        "on-click": "~/nixconfig/home/1080dots/rofi/shutdown.sh"
     }, 
+
     "custom/seperator": {
         "format": "|"
     },
-
     "cpu": {
         "interval": 10,
         "format": " {avg_frequency}GHz {usage}%"
@@ -77,5 +87,12 @@
     },
     "disk": {
         "format": "󰗮 {percentage_used}% used"
+    },
+    "custom/kernel": {
+        "exec": "~/nixconfig/home/1080dots/waybar/kernel.sh",
+        "interval": 60,
+        "format": " kernel: {}",
+        "tooltip-format": " linux kernel: {}",
+        "on-click": ""
     }
 }

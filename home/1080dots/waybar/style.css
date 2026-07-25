@@ -1,69 +1,91 @@
+@define-color txt #eff1f5;
+@define-color l-blue #8caaee;
+@define-color l-purple #ca9ee6;
+@define-color l-red #ea999c;
+@define-color l-green #a6d189;
+@define-color l-yellow #e5c890;
+@define-color l-orange #ef9f76;
+@define-color l-pink #f4b8e4;
+@define-color l-teal #81c8be;
+@define-color d-purple #8839ef;
+
+
 *{
-    /* `otf-font-awesome` is required to be installed for icons */
     font-family:"JetBrainsMono Nerd Font Propo";
     font-size: 14px;
     font-weight:bold;
     min-height : 0;
-    margin:0px;
-    padding:0;
+    padding: 0px;
+    margin: 0px;
+    background : transparent;
 }
 
 window#waybar {
     background-color: #11111b; 
 }
-#basic,
-#system,
-#worksp {
-    background : transparent;
-    margin: 2px 3px;
- }
 #workspaces button {
-    color: #eff1f5;
-    margin: 2px 3px;
+    color: @txt;
+    margin: 3px 3px;
 }
 #workspaces button.active {
     font-weight: 900;
     color:black;
-    background :#ca9ee6;
+    background : @l-purple;
     border-radius : 0px;
+    margin: 3px 3px;
 }
 #pulseaudio {
-    color: #eff1f5;
+    color: @txt;
     padding: 1px 3px;
-    margin: 2px 3px;
+    margin: 2px 5px;
 }
 #bluetooth {
-    color:#eff1f5;
-    margin: 2px 3px;
+    color: @txt;
     padding: 1px 3px;
+    margin: 2px 5px;
 }
 #clock { 
-    color: #eff1f5;
+    color: @l-red;
+    text-decoration: underline;
     padding: 1px 3px;
+    margin: 2px 3px;
 }
 #cpu { 
-    color: #f4b8e4;
+    color: @l-green;
+    text-decoration: underline;
     padding: 1px 3px;
     margin: 2px 3px;
-    text-decoration: underline;
+}
+#custom-shutdown {
+    color: @txt;
+    padding: 1px 3px;
+    margin: 2px 5px;
 }
 #custom-notifications {
+    color: @txt;
+    padding: 1px 3px;
+    margin: 2px 5px;
+}
+#custom-kernel {
+    color: @l-pink;
+    text-decoration: underline;
     padding: 1px 3px;
     margin: 2px 3px;
-    color: #eff1f5;
 }
 #custom-seperator {
-    color:#eff1f5;
+    color: @txt;
+    padding: 1px 3px;
+    margin: 2px 3px;
 }
 #memory { 
-    color:#a6d189;
+    color: @l-yellow;
+    text-decoration: underline;
     padding: 1px 3px;
     margin: 2px 3px;
-    text-decoration: underline;
 }
 #disk {
-    color : #8caaee;
+    color : @l-teal;
+    text-decoration: underline;
     padding: 1px 3px;
     margin: 2px 3px;
-    text-decoration: underline;
 }

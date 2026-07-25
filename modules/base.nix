@@ -11,7 +11,7 @@
       extraConfig = '' set timeout_style=hidden '';
     };
     efi.canTouchEfiVariables = true;
-    timeout = 3; 
+    timeout = 2; 
   };
 
   # Use latest kernel.
