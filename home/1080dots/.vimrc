@@ -15,4 +15,4 @@ syntax on
 
 let mapleader = " "
 
-nnoremap <leader>cd :Ex<CR>
+nnoremap <leader>cd :Ex %:p:h<CR>

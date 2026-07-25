@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "bottom",
-    "modules-center": [ 
+    "modules-right": [ 
         "custom/kernel",
         "custom/seperator",
         "cpu",
@@ -13,12 +13,14 @@
         "clock"
 
     ],
-    "modules-left": ["group/worksp"],
-    "modules-right": [
-        "bluetooth",
-        "pulseaudio",
+    "modules-center": [ ],
+    "modules-left": [
+        "group/worksp",
+        "custom/seperator",
+        "custom/shutdown",
         "custom/notifications",
-        "custom/shutdown"
+        "pulseaudio",
+        "bluetooth"
     ],
     "group/worksp":{
         "orientation": "horizontal",
@@ -47,16 +49,16 @@
         }
     },
     "bluetooth": {
-        "format": " on",
-        "format-disabled": " off",
-        "format-connected": " con",
+        "format": "",
+        "format-disabled": "",
+        "format-connected": "",
         "tooltip-format": "{controller_alias}\t{controller_address}",
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
         "on-click": "exec blueman-manager"
     },
     "pulseaudio": {
-        "format": "{icon} {volume}%",
+        "format": "{icon}",
         "format-muted": "",
         "format-icons": {
             "default": ["",""]
