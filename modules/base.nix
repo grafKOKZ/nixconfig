@@ -15,7 +15,7 @@
   };
 
   # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages_zen;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
