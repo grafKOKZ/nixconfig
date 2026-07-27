@@ -11,11 +11,13 @@
       extraConfig = '' set timeout_style=hidden '';
     };
     efi.canTouchEfiVariables = true;
-    timeout = 2; 
+    timeout = 1; 
   };
 
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_zen;
+  hardware.enableRedistributableFirmware = true;
+  services.fstrim.enable = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 

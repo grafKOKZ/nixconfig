@@ -1,5 +1,4 @@
 set number
-set mouse=a
 set relativenumber
 
 filetype plugin indent on 
