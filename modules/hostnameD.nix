@@ -2,4 +2,5 @@
 
 {
   networking.hostName = "nix-desktop"; 
+  boot.kernelPackages = pkgs.linuxPackages_zen;
 }

@@ -15,7 +15,6 @@
   };
 
   # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_zen;
   hardware.enableRedistributableFirmware = true;
   services.fstrim.enable = true;
 
@@ -39,7 +38,7 @@
     gc = {
       automatic = true;
       dates = "weekly";
-      options = "--delete-older-than 15d";
+      options = "--delete-older-than 10d";
     };
   };
 
@@ -55,6 +54,8 @@
     zip
     unzip
     xdg-user-dirs
+    gcc
+    fastfetch
   ];
 
   users.users.klaas = {

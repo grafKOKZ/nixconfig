@@ -2,7 +2,6 @@
 
 {
   environment.systemPackages = with pkgs; [
-    fastfetch
     swaynotificationcenter
     libnotify
     file-roller
@@ -10,7 +9,6 @@
     vlc
     hyprpaper
     waybar
-    gcc
     rofi
     pinta
     nwg-look

@@ -2,6 +2,7 @@
 
 {
   networking.hostName = "nix-server"; 
+  boot.kernelPackages = pkgs.linuxPackages_latest;
   
   environment.systemPackages = with pkgs; [
     jdk25
