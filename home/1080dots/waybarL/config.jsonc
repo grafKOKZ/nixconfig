@@ -4,7 +4,7 @@
     "modules-right": [ 
         "custom/kernel",
         "custom/seperator",
-        "cpu",
+        "battary",
         "custom/seperator",
         "memory",
         "custom/seperator",
