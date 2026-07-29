@@ -85,6 +85,7 @@
         "format": "|"
     },
     "battary": {
+        "bat" : "BAT0",
         "interval": 60,
         "format": " battary: {capacity}%"
     },
