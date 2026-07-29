@@ -4,7 +4,7 @@
     "modules-right": [ 
         "custom/kernel",
         "custom/seperator",
-        "battary",
+        "battery",
         "custom/seperator",
         "memory",
         "custom/seperator",
@@ -84,7 +84,7 @@
     "custom/b-left": {
         "format": "|"
     },
-    "battary": {
+    "battery": {
         "bat" : "BAT0",
         "interval": 60,
         "format": " battary: {capacity}%"

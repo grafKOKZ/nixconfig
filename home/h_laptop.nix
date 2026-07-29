@@ -6,7 +6,7 @@
     homeDirectory = "/home/klaas";
     stateVersion = "26.05";
 
-    file.".config/kitty/kitty.conf".source = ./1080dots/kitty/kitty.conf;
+    file.".config/kitty/kitty.conf".source = ./1080dots/kittyL/kitty.conf;
     file.".config/hypr/hyprland.lua".source = ./1080dots/hyprL/hyprland.lua;
     file.".config/hypr/hyprpaper.conf".source = ./1080dots/hyprL/hyprpaper.conf;
     file.".config/waybar/config.jsonc".source = ./1080dots/waybarL/config.jsonc;
