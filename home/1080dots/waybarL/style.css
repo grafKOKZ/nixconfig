@@ -50,7 +50,7 @@ window#waybar {
     padding: 0px 3px;
     margin: 5px 3px;
 }
-#battary { 
+#battery { 
     color: @l-green;
     border-bottom: 2px solid @l-green ;
     padding: 0px 3px;

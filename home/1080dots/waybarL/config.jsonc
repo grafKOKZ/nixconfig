@@ -87,7 +87,8 @@
     "battery": {
         "bat" : "BAT0",
         "interval": 60,
-        "format": " battary: {capacity}%"
+        "format": " battary: {capacity}%",
+        "format": "󱐋  battary: {capacity}%"
     },
     "memory": {
         "interval": 30,
