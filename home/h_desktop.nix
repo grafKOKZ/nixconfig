@@ -17,5 +17,7 @@
     file.".config/swaync/style.css".source = ./1080dots/swaync/style.css;
     file.".vimrc".source = ./1080dots/.vimrc;
     file.".bashrc".source = ./1080dots/.bashrc;
+    file.".local/share/Prismlauncher/themes/catppuccin/theme.json".source = ./1080dots/Prismlauncher/themes/theme.json;
+    file.".local/share/Prismlauncher/themes/catppuccin/themeStyle.css".source = ./1080dots/Prismlauncher/themes/themeStyle.css;
   };
 }
