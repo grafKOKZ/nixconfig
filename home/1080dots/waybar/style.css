@@ -86,10 +86,10 @@ window#waybar {
 #custom-b-left {
     color: @txt;
     padding: 0px 3px ;
-    margin: 5px 0px 5px 3px;
+    margin: 5px 5px;
 }
 #custom-b-right {
     color: @txt;
-    margin: 5px 0px;
+    margin: 5px 0px 5px 5px;
     padding: 0px 3px;
 }

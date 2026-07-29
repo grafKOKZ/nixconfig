@@ -203,8 +203,8 @@ hl.config({
         kb_layout  = "de",
         sensitivity = 0, 
         accel_profile= "flat",
-        repeat_rate = 35,
-        repeat_delay = 200,
+        repeat_rate = 25,
+        repeat_delay = 250,
     },
 })
 

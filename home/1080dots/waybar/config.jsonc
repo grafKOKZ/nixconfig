@@ -18,8 +18,7 @@
         "custom/shutdown",
         "custom/notifications",
         "pulseaudio",
-        "bluetooth",
-        "custom/b-right"
+        "bluetooth"
     ],
     "group/worksp":{
         "orientation": "horizontal",
@@ -83,7 +82,7 @@
         "format": "]"
     },
     "custom/b-left": {
-        "format": "["
+        "format": "|"
     },
     "cpu": {
         "interval": 10,
