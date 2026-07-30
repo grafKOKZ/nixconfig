@@ -233,6 +233,8 @@ hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("discord"))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("spotify"))  
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
 hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("pkill waybar; sleep; waybar"))  
+hl.bind("XF86MonBrightnessUp",hl.dsp.exec_cmd("brightnessctl set +5%"),{ locked = true, repeating = true })
+hl.bind("XF86MonBrightnessDown",hl.dsp.exec_cmd("brightnessctl set 5%-"),{ locked = true, repeating = true })
 
 
 -- Move focus with mainMod + arrow keys

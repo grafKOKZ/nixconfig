@@ -5,4 +5,9 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
   hardware.cpu.intel.updateMicrocode = true;
   powerManagement.cpuFreqGovernor = "performance";
+
+  environment.systemPackages = with pkgs; [
+    brightnessctl
+    wev
+  ];
 }
