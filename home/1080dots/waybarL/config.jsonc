@@ -86,8 +86,8 @@
     },
     "battery": {
         "bat" : "BAT0",
-        "interval": 60,
-        "format": " battary: {capacity}%",
+        "interval": 5,
+        "format": " battery: {capacity}%",
         "format-charging": "󱐋  battary: {capacity}%"
     },
     "memory": {
