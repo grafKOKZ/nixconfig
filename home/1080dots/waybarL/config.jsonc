@@ -9,7 +9,6 @@
         "memory",
         "custom/seperator",
         "clock"
-
     ],
     "modules-center": [ ],
     "modules-left": [
@@ -79,7 +78,7 @@
         "format": "|"
     },
     "custom/b-right": {
-        "format": "]"
+        "format": ""
     },
     "custom/b-left": {
         "format": "|"
@@ -88,7 +87,7 @@
         "bat" : "BAT0",
         "interval": 5,
         "format": " battery: {capacity}%",
-        "format-charging": "󱐋  battary: {capacity}%"
+        "format-charging": "󱐋  battery: {capacity}%"
     },
     "memory": {
         "interval": 30,

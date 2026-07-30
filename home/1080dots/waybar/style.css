@@ -25,14 +25,14 @@ window#waybar {
 }
 #workspaces button {
     color: @txt;
-    margin: 5px 3px;
+    margin: 7px 3px;
 }
 #workspaces button.active {
     font-weight: 900;
     color:black;
     background : @l-purple;
     border-radius : 0px;
-    margin: 5px 3px;
+    margin: 7px 3px;
 }
 #pulseaudio {
     color: @txt;
@@ -48,13 +48,13 @@ window#waybar {
     color: @l-red;
     border-bottom: 2px solid @l-red ;
     padding: 0px 3px;
-    margin: 5px 3px;
+    margin: 7px 3px;
 }
 #cpu { 
     color: @l-green;
     border-bottom: 2px solid @l-green ;
     padding: 0px 3px;
-    margin: 5px 3px;
+    margin: 7px 3px;
 }
 #custom-shutdown {
     color: @txt;
@@ -70,18 +70,18 @@ window#waybar {
     color: @l-pink;
     border-bottom: 2px solid @l-pink ;
     padding: 0px 3px;
-    margin: 5px 3px;
+    margin: 7px 3px;
 }
 #custom-seperator {
     color: @txt;
     padding: 0px 3px;
-    margin: 5px 3px;
+    margin: 7px 3px;
 }
 #memory { 
     color: @l-yellow;
     border-bottom: 2px solid @l-yellow ;
     padding: 0px 3px;
-    margin: 5px 3px;
+    margin: 7px 3px;
 }
 #custom-b-left {
     color: @txt;

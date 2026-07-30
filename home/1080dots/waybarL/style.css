@@ -25,14 +25,14 @@ window#waybar {
 }
 #workspaces button {
     color: @txt;
-    margin: 5px 3px;
+    margin: 7px 3px;
 }
 #workspaces button.active {
     font-weight: 900;
     color:black;
     background : @l-purple;
     border-radius : 0px;
-    margin: 5px 3px;
+    margin: 7px 3px;
 }
 #pulseaudio {
     color: @txt;
@@ -48,40 +48,40 @@ window#waybar {
     color: @l-red;
     border-bottom: 2px solid @l-red ;
     padding: 0px 3px;
-    margin: 5px 3px;
+    margin: 7px 3px;
 }
 #battery { 
     color: @l-green;
     border-bottom: 2px solid @l-green ;
     padding: 0px 3px;
-    margin: 5px 3px;
+    margin: 7px 3px;
 }
 #custom-shutdown {
     color: @txt;
     padding: 0px 3px;
-    margin: 2px 5px;
+    margin: 5px 5px;
 }
 #custom-notifications {
     color: @txt;
     padding: 0px 3px;
-    margin: 2px 5px;
+    margin: 5px 5px;
 }
 #custom-kernel {
     color: @l-pink;
     border-bottom: 2px solid @l-pink ;
     padding: 0px 3px;
-    margin: 5px 3px;
+    margin: 7px 3px;
 }
 #custom-seperator {
     color: @txt;
     padding: 0px 3px;
-    margin: 5px 3px;
+    margin: 7px 3px;
 }
 #memory { 
     color: @l-yellow;
     border-bottom: 2px solid @l-yellow ;
     padding: 0px 3px;
-    margin: 5px 3px;
+    margin: 7px 3px;
 }
 #custom-b-left {
     color: @txt;
@@ -90,6 +90,6 @@ window#waybar {
 }
 #custom-b-right {
     color: @txt;
-    margin: 5px 0px 5px 5px;
+    margin-left: 7px;
     padding: 0px 3px;
 }
