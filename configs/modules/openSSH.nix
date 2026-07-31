@@ -36,11 +36,11 @@
       enable = true;
       maxtime = "168h";
     };
-    jails.sshd = ''
-      enabled = true
-      port = 48222
-      filter = sshd
-      action = iptables-multiport[name=ssh, port="48222", protocol=tcp]
-    '';
+    jails.sshd.settings = {
+      enabled = true;
+      port = "48222";
+      filter = "sshd";
+      action = ''iptables-multiport[name=ssh, port="48222", protocol=tcp]'';
+    };
   };
 }
