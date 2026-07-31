@@ -12,11 +12,11 @@
 
       # --- debloaten ---
       X11Forwarding = false;
-      AllowTCPForwarding = false;
-      AllowAgentForwarding = false;
-      PermitTunnel = false;
-      GatewayPorts = false;
-      Compression = false;
+      AllowTCPForwarding = "no";
+      AllowAgentForwarding = "no";
+      PermitTunnel = "no";
+      GatewayPorts = "no";
+      Compression = "no";
       UseDns = false;
 
       # --- Limits & Timeouts ---
