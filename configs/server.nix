@@ -4,6 +4,7 @@
 {
   imports = [
     /etc/nixos/hardware-configuration.nix
+    ./modules/openSSH.nix
     #./modules/programs.nix
     ./modules/base.nix
     #./modules/hyprDE.nix
