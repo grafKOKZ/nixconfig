@@ -12,17 +12,17 @@
 
       # --- debloaten ---
       X11Forwarding = false;
-      AllowTCPForwarding = "no";
-      AllowAgentForwarding = "no";
-      PermitTunnel = "no";
-      GatewayPorts = "no";
-      Compression = "no";
-      UseDNS = "no";
+      AllowTCPForwarding = false;
+      AllowAgentForwarding = false;
+      PermitTunnel = false;
+      GatewayPorts = false;
+      Compression = false;
+      UseDns = false;
 
       # --- Limits & Timeouts ---
       MaxAuthTries = 3;
       MaxSessions = 2;
-      LoginGraceTime = "15";
+      LoginGraceTime = "15s";
       MaxStartups = "1:50:5";
     };
   };
