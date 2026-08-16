@@ -1,0 +1,63 @@
+*{
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family:"JetBrainsMono Nerd Font Propo";
+    font-size: 16px;
+    font-weight:bold;
+    min-height : 0;
+    margin:0px;
+    padding:0;
+}
+
+window#waybar {
+    background-color: #11111b; 
+}
+#basic,
+#system,
+#worksp {
+    background : transparent;
+    margin: 5px 0px;
+ }
+#workspaces button {
+    color: #eff1f5;
+    margin: 0px 5px;
+}
+#workspaces button.active {
+    font-weight: 900;
+    color:black;
+    background :#ca9ee6;
+    border-radius : 0px;
+}
+#pulseaudio {
+    color: #8caaee;
+    text-decoration: underline;
+    padding: 1px 5px;
+    margin: 0px 5px;
+}
+#bluetooth {
+    color: #ea999c;
+    margin: 0px 5px;
+    text-decoration: underline;
+    padding: 1px 5px;
+}
+#clock { 
+    color: #eff1f5;
+    padding: 1px 5px;
+}
+#cpu { 
+    color: #f4b8e4;
+    padding: 1px 5px;
+    margin: 0px 5px;
+    text-decoration: underline;
+}
+#custom-notifications {
+    padding: 1px 5px;
+    margin: 0px 5px;
+    text-decoration: underline;
+    color: #ca9ee6;
+}
+#memory { 
+    color:#a6d189;
+    padding: 1px 5px;
+    margin: 0px 5px;
+    text-decoration: underline;
+}

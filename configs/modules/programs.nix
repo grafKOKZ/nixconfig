@@ -2,21 +2,13 @@
 
 {
   environment.systemPackages = with pkgs; [
-    swaynotificationcenter
     libnotify
-    file-roller
     kitty
     vlc
-    hyprpaper
-    waybar
-    rofi
     pinta
-    nwg-look
     pcmanfm
     spotify
     discord
-    pavucontrol
-    seahorse
   ];
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
