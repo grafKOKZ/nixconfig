@@ -93,8 +93,8 @@ tooltip {
     margin: 7px 3px;
 }
 #memory { 
-    color: @l-yellow;
-    border-bottom: 2px solid @l-yellow ;
+    color: @l-green;
+    border-bottom: 2px solid @l-green ;
     padding: 0px 3px;
     margin: 7px 3px;
 }
