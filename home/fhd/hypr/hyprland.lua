@@ -47,7 +47,7 @@ local menu        = "rofi -show drun"
    hl.exec_cmd("hyprpaper")
    hl.exec_cmd("waybar")
    hl.exec_cmd("easyeffects --gapplication-service")
-   --hl.exec_cmd("swaync")
+   hl.exec_cmd("gpu-screen-recorder -w screen -f 60 -a default_output -r 120 -c mp4 -o ~/Videos/gsr-clips -df yes >> ~/.cache/gsr-replay.log 2>&1")
  end)
 
 
@@ -263,6 +263,9 @@ hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_
 hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"),      { locked = true, repeating = true })
 hl.bind("XF86AudioMute",        hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"),     { locked = true, repeating = true })
 hl.bind("XF86AudioMicMute",     hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"),   { locked = true, repeating = true })
+
+hl.bind("F8", hl.dsp.exec_cmd("~/nixconfig/scripts/gsr-clip.sh 30"))
+hl.bind("F9", hl.dsp.exec_cmd("~/nixconfig/scripts/gsr-clip.sh full"))
 --hl.bind("XF86MonBrightnessUp",  hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%+"),                  { locked = true, repeating = true })
 --hl.bind("XF86MonBrightnessDown",hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%-"),                  { locked = true, repeating = true })
 

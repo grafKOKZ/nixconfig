@@ -98,7 +98,7 @@
         "format": " {used:0.1f}G / {total:0.1f}G"
     },
     "custom/kernel": {
-        "exec": "~/nixconfig/home/fhd/waybar/kernel.sh",
+        "exec": "~/nixconfig/scripts/kernel.sh",
         "interval": 60,
         "format": " kernel: {}",
         "tooltip-format": " linux kernel: {}",

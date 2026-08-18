@@ -3,9 +3,9 @@
 {
   environment.systemPackages = with pkgs; [
     prismlauncher
-    lunar-client
+    ffmpeg
     protonup-qt
   ];
-  
+  programs.gpu-screen-recorder.enable = true; 
   programs.steam.enable = true;
 }
