@@ -18,7 +18,7 @@ done
 if [ "$LENGTH" = "full" ]; then
     OUT="${NEWFILE%.mp4}_full.mp4"
     mv "$NEWFILE" "$OUT"
-    notify-send "Clip gespeichert" "$(basename "$OUT") (voller Buffer)"
+    notify-send "Clip savedt" "$(basename "$OUT") (full buffer)"
     exit 0
 fi
 
@@ -50,4 +50,4 @@ fi
 # Rohdatei aufräumen
 [ -s "$OUT" ] && rm -f "$NEWFILE"
 
-notify-send "Clip gespeichert" "$(basename "$OUT") (${LENGTH}s, keyframe-aligned)"
+notify-send "Clip saved" "$(basename "$OUT") (${LENGTH}s)"

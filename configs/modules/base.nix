@@ -50,6 +50,7 @@
     vim
     tree
     wget
+    nitch
     git
     zip
     unzip
