@@ -11,15 +11,15 @@ configuration {
 @theme "/dev/null"
 
 * {
-  bg3: #1e1e2e;
-  bg2: #11111b;
-  bg: #181825;
-  bg-alt: #ca9ee6;
+  background-l2: #2c2c2c;
+  background-l0: #121212;
+  background-l1: #212121;
+  accent: #f44336;
 
-  fg: #eff1f5;
-  fg-alt: #7c7f93;
+  txt: #fafafa;
+  txt-alt: #a0a0a0;
 
-  background-color: @bg;
+  background-color: @background-l1;
 
   border: 0;
   margin: 0;
@@ -30,19 +30,22 @@ configuration {
 window {
   width: 35%;
   padding: 18;
-  background-color: @bg2;
+  background-color: @background-l0;
+  //border-radius: 40;
 }
 
 element {
   padding: 12;
-  text-color: @fg-alt;
+  text-color: @txt-alt;
   margin: 10;
+  //border-radius: 20;
 }
 
 element selected {
-  text-color: @fg;
+  text-color: @txt;
   margin: 10;
-  background-color: @bg3;
+  background-color: @background-l2;
+  //border-radius: 20;
 }
 
 element-text {
@@ -57,33 +60,35 @@ element-icon {
 
 element-icon selected {
   size: 30;
-  background-color: @bg3;
+  background-color: @background-l2;
 }
 
 entry {
   padding: 12;
-  text-color: black;
-  background-color: @bg-alt;
+  text-color: @txt;
+  background-color: @background-l1;
 }
 
 inputbar {
   children: [prompt, entry];
   margin: 0 0 18 0;
+  //border-radius: 20;
 }
 
 listview {
   columns: 2;
   lines: 7;
+  //border-radius: 20;
 }
 
 mainbox {
   children: [inputbar, listview];
-  background-color: @bg2;
+  background-color: @background-l0;
 }
 
 prompt {
   enabled: true;
   padding: 12 0 0 12;
-  background-color: @bg-alt;
-  text-color: black;
+  background-color: @background-l1;
+  text-color: @txt;
 }

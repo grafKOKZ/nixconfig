@@ -1,10 +1,11 @@
-@define-color bg #11111b;
-@define-color txt #eff1f5;
-@define-color sel #ca9ee6;
-@define-color bg-alt #1e1e2e;
+@define-color background #212121;
+@define-color txt #fafafa;
+@define-color foreground #f44336;
+@define-color accent #5b9bf8;
+@define-color l-background #242424;
 
 .notification {
-  background: @bg-alt;
+  background: @l-background;
   color: @txt;
   border-radius: 0px;
   opacity: 1;
@@ -19,7 +20,7 @@
   font-size: 13px;
   font-weight: bold;
   margin-bottom: 8px;
-  color: @sel;
+  color: @accent;
 }
 
 .body {
@@ -28,12 +29,12 @@
 }
 
 .notification-default-action:hover {
-  background: @bg-alt;
+  background: @l-background;
 }
 
 .close-button {
-  background: @sel;
-  color: @bg;
+  background: @accent;
+  color: @background;
   text-shadow: none;
   padding: 0;
 }
@@ -45,7 +46,7 @@
 
 .control-center {
   opacity: 1;
-  background: @bg;
+  background: @background;
   border-radius: 0px;
   max-height: 900px;
   min-height: 700px;

@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 let
   sddm-astronaut = pkgs.sddm-astronaut.override {
-  embeddedTheme = "pixel_sakura_static";
+    embeddedTheme = "hyprland_kath";
   };
 in
 {
@@ -21,6 +21,7 @@ in
   environment.systemPackages = with pkgs; [
     sddm-astronaut
     easyeffects
+    elementary-xfce-icon-theme
   ];
   services.displayManager.sddm = {
     enable = true;
