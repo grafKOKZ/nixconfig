@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 let
   sddm-astronaut = pkgs.sddm-astronaut.override {
-    embeddedTheme = "hyprland_kath";
+    embeddedTheme = "jake_the_dog";
   };
 in
 {

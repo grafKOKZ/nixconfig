@@ -59,11 +59,11 @@ local menu        = "rofi -show drun"
 
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
-hl.env("HYPRCURSOR_THEME", "Qogir-Dark")
-hl.env("XCURSOR_THEME", "Qogir-Dark")
 hl.env("XDG_CURRENT_DESKTOP", "Hyprland")
 hl.env("XDG_SESSION_TYPE", "wayland")
 hl.env("XDG_SESSION_DESKTOP", "Hyprland")
+hl.env("HYPRCURSOR_THEME", "Notwaita-Black")
+hl.env("XCURSOR_THEME", "Notwaita-Black")
 
 
 -----------------------
