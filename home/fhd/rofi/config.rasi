@@ -5,7 +5,7 @@ configuration {
   font: "JetbrainsMono Nerd Font Medium 10";
   modi: "window,run,drun";
   show-icons: true;
-  icon-theme: "Papirus";
+  icon-theme: "elementary Xfce dark";
 }
 
 @theme "/dev/null"
