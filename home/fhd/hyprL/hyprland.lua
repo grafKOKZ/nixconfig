@@ -313,6 +313,42 @@ hl.window_rule({
 
     no_focus = true,
 })
+hl.window_rule({
+    match = { class = "^org.prismlauncher.PrismLauncher$" },
+    workspace = 1,
+})
+hl.window_rule({
+    match = { class = "^Spotify$" },
+    workspace = 2,
+})
+hl.window_rule({
+    match = { class = "^discord$" },
+    workspace = 3,
+})
+hl.window_rule({
+    match = { class = "^firefox$" },
+    workspace = 4,
+})
+hl.window_rule({
+    match = { class = "^kitty$" },
+    workspace = 5,
+})
+hl.window_rule({
+    match = { class = "^steam$" },
+    workspace = 6,
+})
+hl.window_rule({
+    match = { class = "^vlc$" },
+    workspace = 7,
+})
+hl.window_rule({
+    match = { class = "^pcmanfm$" },
+    workspace = 8,
+})
+hl.window_rule({
+    match = { class = "^com.github.PintaProject.Pinta$" },
+    workspace = 9,
+})
 
 -- Layer rules also return a handle.
 -- local overlayLayerRule = hl.layer_rule({
