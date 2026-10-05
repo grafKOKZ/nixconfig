@@ -4,6 +4,8 @@
   environment.systemPackages = with pkgs; [
     libnotify
     kitty
+    kid3
+    audacity
     libreoffice
     vlc
     pinta
