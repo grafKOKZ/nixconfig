@@ -9,7 +9,7 @@
 @define-color l-teal #4db6ac;
 @define-color d-purple #ab47bc;
 @define-color accent #f44336;
-@define-color background #212121;
+@define-color background #121212;
 
 
 *{
@@ -28,18 +28,21 @@ window#waybar {
     margin-left: 5px;
 }
 #workspaces label {
-    font-size: 22px;
+    font-size: 20px;
 }
 #workspaces button {
     color: @txt;
-    margin: 6px 5px;
+    margin: 6px 3px;
+    padding: 0px 2px;
 }
 #workspaces button.active {
-    color: @accent;
+    color: @txt;
     border-radius : 0px;
-    margin: 6px 5px;
+    margin: 6px 3px;
+    background: transparent;
+    padding: 0px 2px;
+    border-bottom: 2px solid @txt;
     margin-bottom: 4px;
-    border-bottom: 2px solid @accent;
 }
 tooltip {
   background: #000000;

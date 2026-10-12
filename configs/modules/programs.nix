@@ -6,6 +6,7 @@
     kitty
     kid3
     audacity
+    virtualbox
     libreoffice
     vlc
     pinta
