@@ -18,7 +18,7 @@ done
 if [ "$LENGTH" = "full" ]; then
     OUT="${NEWFILE%.mp4}_full.mp4"
     mv "$NEWFILE" "$OUT"
-    notify-send "Clip savedt" "$(basename "$OUT") (full buffer)"
+    notify-send "Clip saved" "$(basename "$OUT") (full buffer)"
     exit 0
 fi
 

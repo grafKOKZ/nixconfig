@@ -5,4 +5,6 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
   hardware.cpu.amd.updateMicrocode = true;
   powerManagement.cpuFreqGovernor = "performance";
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "klaas" ];
 }
