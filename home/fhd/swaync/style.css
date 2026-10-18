@@ -1,8 +1,8 @@
-@define-color background #212121;
+@define-color background #121212;
 @define-color txt #fafafa;
 @define-color foreground #f44336;
 @define-color accent #f44336;
-@define-color l-background #242424;
+@define-color l-background #212121;
 
 .notification {
   background: @l-background;
