@@ -130,8 +130,8 @@ hl.curve("easy",           { type = "spring", mass = 1, stiffness = 71.2633, dam
 
 hl.animation({ leaf = "global",        enabled = true,  speed = 10,   bezier = "default" })
 hl.animation({ leaf = "border",        enabled = true,  speed = 3,    bezier = "easeOutQuint" })
-hl.animation({ leaf = "windows",       enabled = true,  speed = 3,    bezier = "almostLinear" })
-hl.animation({ leaf = "windowsIn",     enabled = true,  speed = 3,    bezier = "easeIn"      })
+hl.animation({ leaf = "windows",       enabled = true,  speed = 3,    bezier = "almostLinear", style = "popin 60%"})
+hl.animation({ leaf = "windowsIn",     enabled = true,  speed = 3,    bezier = "easeIn", style = "popin 60%"})
 hl.animation({ leaf = "windowsOut",    enabled = true,  speed = 3,    bezier = "easeOut"     })
 hl.animation({ leaf = "fadeIn",        enabled = true,  speed = 1.73, bezier = "almostLinear" })
 hl.animation({ leaf = "fadeOut",       enabled = true,  speed = 1.46, bezier = "almostLinear" })
@@ -279,6 +279,23 @@ hl.bind("F9", hl.dsp.exec_cmd("~/nixconfig/scripts/gsr-clip.sh full"))
 --hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 --hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
 
+hl.bind("SUPER + O", function()
+  if hl.get_config("general.gaps_out").top == 8 then
+    hl.config({
+      general = {
+        gaps_in  = 0,
+        gaps_out = 0,
+      },
+    })
+  else
+    hl.config({
+       general = {
+         gaps_in  = 4,
+         gaps_out = 8,
+       },
+    })
+  end
+end)
 
 --------------------------------
 ---- WINDOWS AND WORKSPACES ----
