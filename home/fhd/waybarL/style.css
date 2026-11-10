@@ -68,9 +68,13 @@ tooltip {
     color: @txt;
     padding: 0px 3px;
     margin: 6px 7px;
+    font-family:"Iosevka Nerd Font";
+    font-weight: bold;
 }
 #battery { 
     font-size: 22px;
+    font-family:"Iosevka Nerd Font";
+    font-weight: bold;
     color: @txt;
     padding: 0px 3px;
     margin: 6px 7px;
